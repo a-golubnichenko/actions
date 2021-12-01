@@ -15,9 +15,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-  Adeployment:
+  deployment:
     runs-on: ubuntu-latest
-    environment: production
     steps:
-      - name: Adeploy
+      - name: deploy
         run: echo "It is deployment"
