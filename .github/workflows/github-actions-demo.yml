@@ -20,4 +20,4 @@ jobs:
     environment: production
     steps:
       - name: deploy
-      - run: echo "It is deployment"
+        run: echo "It is deployment"
