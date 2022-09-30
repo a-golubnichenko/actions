@@ -1,12 +1,13 @@
-name: deployment
+name: create build and deployment data
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - 'r/*'
 jobs:
   deployment:
     runs-on: ubuntu-latest
-    environment: production
+    environment: dev
     steps:
       - name: deploy
-        run: echo Release
+        run: echo Creating build and deployment data
